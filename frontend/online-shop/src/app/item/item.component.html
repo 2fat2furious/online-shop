@@ -1,0 +1,35 @@
+<ng-container *ngIf="product">
+    <span>
+        <h1>{{product.name}}</h1>
+            <div class="row">
+                    <div class="col s4">
+                      <img class="card-image" src={{product.image}} style="position: inherit" />
+                    </div>
+                    <div class="col s4">
+                      <blockquote>
+                         Цвет: {{product.color}}</blockquote>
+                         <blockquote> Тип кожи: {{product.skin_type}}</blockquote>
+                         <blockquote>Цена: {{product.price}}
+                      </blockquote>
+                      
+                    </div>
+                    <div class="col s4">
+                        <p>Описание:</p>
+                            <hr>
+                      <blockquote style="border-color: white">
+                             {{product.description}}
+                      </blockquote>
+                      <hr>
+                    </div>
+                  </div>
+                  <ul style="margin-left: 8%">
+                        
+                        <li><a
+                            [routerLink]="['/update', product.id]" 
+                            class="waves-effect waves-light btn">UPDATE</a></li>
+                        <li><a 
+                            (click)="handleDelete()"
+                            class="waves-effect waves-light btn">DELETE</a></li>
+                  </ul>
+    </span>
+</ng-container>

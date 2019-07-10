@@ -1,0 +1,14 @@
+.card-image{
+    max-height: 500px;
+    max-width:500px;
+}
+blockquote
+{
+    border-color: lavender;
+}
+
+.waves-effect{
+    background-color: lavender;
+    color: black;
+    font-weight: bold;
+}

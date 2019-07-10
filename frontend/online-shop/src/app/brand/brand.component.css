@@ -1,0 +1,13 @@
+.card-content{
+    height: 130px;
+}
+
+.card{
+    height: 130px;
+    width:130px;
+}
+
+.container img {
+    max-height: 100px;
+    max-width: 100px;
+  }

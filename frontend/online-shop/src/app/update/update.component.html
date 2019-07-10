@@ -1,0 +1,29 @@
+<p>Name <input type="text" [(ngModel)]="product.name"></p>
+<p>Description<textarea [(ngModel)]="product.description"></textarea></p>
+<p>Price<input type="number" [(ngModel)]="product.price"></p>
+<p>Skin Type<input type="text" [(ngModel)]="product.skin_type"></p>
+<p>Brand
+    <select [(ngModel)]="product.id_brand">
+        <option *ngFor="let brand of brands" value="{{brand.id}}">
+            {{brand.name}}
+        </option>
+    </select>
+</p>
+<p>Type
+    <select [(ngModel)]="product.type_id">
+        <option *ngFor="let type of types" value="{{type.id}}">
+            {{type.name}}
+        </option>
+    </select>
+</p>
+<p>
+    Color
+    <input type="text" [(ngModel)]="product.color" />
+</p>
+<p>
+    Image
+    <input type="text" [(ngModel)]="product.image" />
+</p>
+<ul style="margin-left: 2%">
+    <li><a (click)="handleInsert()" class="waves-effect waves-light btn">SAVE</a></li>
+</ul>

@@ -1,8 +1,9 @@
-nav {
-    background-color: lavender;
-}
 .waves-effect{
     background-color: lavender;
     color: black;
     font-weight: bold;
+}
+
+select {
+    display: inline !important;
 }
